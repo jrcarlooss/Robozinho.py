@@ -23,7 +23,7 @@ def executar_codigo():
 
         # Insira o CNPJ
         campo_cnpj = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "txtCnpj")))
-        campo_cnpj.send_keys("08370626000444")
+        campo_cnpj.send_keys("") #digitar CNPJ
 
         # Pressione "Tab" para mudar o foco
         pyautogui.press('tab')
@@ -31,14 +31,14 @@ def executar_codigo():
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "txtCpfUsuario"))).click()
         # Insira o CPF
         campo_cpf = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "txtCpfUsuario")))
-        campo_cpf.send_keys("10266422721")
+        campo_cpf.send_keys("") #digitar CPF
 
         # Pressione "Tab" novamente para mudar o foco
         pyautogui.press('tab')
 
         # Insira a senha
         campo_senha = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "txtSenha")))
-        campo_senha.send_keys("popo22")
+        campo_senha.send_keys("") #digitar senha
 
         pyautogui.press('tab')
         # Pressione "Enter" para enviar o formulário
@@ -60,12 +60,12 @@ def executar_codigo():
         pyautogui.sleep(2)
 
         campo_responsavel = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "txtGeradorRespExpedicao")))
-        campo_responsavel.send_keys("RAPHAEL MELO")
+        campo_responsavel.send_keys("") #digitar Nome
         pyautogui.sleep(1)
         pyautogui.hotkey('tab')
         pyautogui.sleep(3)
         campo_cargo = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "txtGeradorRespCargo")))
-        campo_cargo.send_keys("ADMINISTRADOR")
+        campo_cargo.send_keys("") #digitar Função
 
         button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "btnGravar")))
         button.click()
@@ -81,6 +81,6 @@ def executar_codigo():
     finally:
         driver.quit()
 
-# Executar o código 1 vezes
-for _ in range(10 ):
+
+for _ in range(1 ): # Executar o código 1 vezes
     executar_codigo()
