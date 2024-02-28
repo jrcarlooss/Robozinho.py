@@ -1,1 +1,2 @@
-Script em Python que automatiza o preenchimento de formulário para impressão do pedido no Sistema de Manifesto de Transporte de Resíduos - MTR (INEA), Utilizando Selenium , Webdriver e Pyautogui como ferramentas para script funcionar de forma automatizada , sem a necessidade de repetição. Script utilizado no meu local de trabalho , que antes era solicitado pelo gestor da unidade e agora todos os computadores podem realizar essa operação simplismente clicanco no arquivo .bat que eu também crie (informando quando o site está inoperante pelo Cmd). 
+Script em Python que automatiza o preenchimento de formulário para impressão do pedido no Sistema de Manifesto de Transporte de Resíduos - MTR (INEA) 
+Criado e Aplicado no meu local de trabalho 
