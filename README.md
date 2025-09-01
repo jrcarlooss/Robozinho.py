@@ -40,5 +40,18 @@ campo_senha.send_keys("")         # Digitar senha
 campo_responsavel.send_keys("")   # Digitar nome do responsável
 campo_cargo.send_keys("")         # Digitar função/cargo
 
-python main.py                    #Executar 
+python main.py                    #Executar
+
+### 🖥️ O que acontece ao rodar o script
+
+1. O navegador **Chrome** será aberto automaticamente pelo Selenium.
+2. O script realizará o **login** utilizando os dados de **CNPJ, CPF e senha** fornecidos.
+3. Após o login, ele **navegará até a página do formulário**.
+4. Os campos do formulário serão **preenchidos automaticamente** com os dados configurados no script.
+5. O formulário será **submetido**, incluindo cliques e comandos de teclado necessários.
+6. Caso surjam mensagens de confirmação ou pop-ups, o script as **fechará automaticamente**.
+7. Ao final, o **navegador será encerrado**.
+
+> 💡 **Dica:** Mantenha o navegador em **tamanho e posição padrão** na tela para que os cliques e comandos do PyAutoGUI funcionem corretamente.
+
 
